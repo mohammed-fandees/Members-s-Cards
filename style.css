@@ -1,0 +1,194 @@
+:root {
+    --color-one: #fff;
+    --color-two: #000;
+    --background: #ddd;
+    --main-color: #0075ff;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Lucida Sans',
+                'Lucida Sans Regular',
+                'Lucida Grande',
+                'Lucida Sans Unicode',
+                 Geneva, Verdana,
+                  sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--background);
+    margin: 0px;
+
+}
+
+::selection {
+    background-color: var(--main-color);
+    color: yellow;
+}
+
+.title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    background-color: var(--main-color);
+    color: #fff;
+    box-shadow: 0px 0px 8px 1px #000;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.parent {
+    align-self: center;
+    display: grid;
+    padding: 10px;
+    padding-bottom: 40px;
+    width: 90%;
+    height: 100%;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 30% 25% 25% 20%;
+    grid-template-areas: "o o a s"
+                         "m u u s"
+                         "m e e s"
+                         "h i g n";
+    gap: 10px 10px;
+}
+
+.parent div {
+    padding: 20px;
+    position: relative;
+    border-radius: 3px 3px 0px 0px;
+    -webkit-border-radius: 3px 3px 0px 0px;
+    -moz-border-radius: 3px 3px 0px 0px;
+    -ms-border-radius: 3px 3px 0px 0px;
+    -o-border-radius: 3px 3px 0px 0px;
+    box-shadow: 8px 3px 17px 0px #0000008c;
+}
+
+.parent div::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: var(--main-color);
+    width: 100%;
+    height: 4px;
+}
+
+.osama {
+    grid-area: o;
+    background-color: var(--color-one);
+}
+
+.ahmed {
+    grid-area: a;
+    background-color: var(--color-one);
+
+}
+
+.shady {
+    grid-area: s;
+    background-color: var(--color-two);
+    color: var(--color-one);
+    width: calc(100% - 30px);
+}
+
+.mohamed {
+    grid-area: m;
+    background-color: var(--color-one);
+    
+}
+
+.mahmoud {
+    grid-area: u;
+    background-color: var(--color-two);
+    color: var(--color-one);
+
+}
+
+.ezz {
+    grid-area: e;
+    background-color: var(--color-one);
+}
+
+.m-sayed {
+    grid-area: h;
+    background-color: var(--color-one);
+}
+
+.ibrahim {
+    grid-area: i;
+    background-color: var(--color-two);
+    color: var(--color-one);
+
+}
+
+.gamal {
+    grid-area: g;
+    background-color: var(--color-one);
+
+}
+
+.eman {
+    grid-area: n;
+    background-color: var(--color-one);
+    width: calc(100% - 30px);
+}
+
+.name {
+    font-weight: bold;
+}
+
+.work {
+    color: #a8a8a0;
+}
+
+.text-one {
+    font-weight: bold;
+
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: #161415;
+}
+
+footer .social {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    margin-left: calc(50% - (38px * 5));
+}
+
+.sm {
+    margin-left: 50px;
+    justify-self: flex-start;
+}
+
+i {
+    color: var(--color-one);
+    font-size: 40px;
+    transition: all .5s 0 ease;
+    -webkit-transition: all .5s 0s ease;
+    -moz-transition: all .5s 0 ease;
+    -ms-transition: all .5s 0 ease;
+    -o-transition: all .5s 0 ease;
+}
+
+i:hover {
+    color: var(--main-color);
+}
+
+footer span {
+    font-weight: bold;
+    font-size: 13px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}

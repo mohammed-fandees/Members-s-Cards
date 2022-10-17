@@ -1,0 +1,45 @@
+@media only screen and (max-width: 767px) {   
+    .title {
+        font-size: 25px;
+    }
+    
+    .parent {
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .parent div {
+        padding: 20px;
+        position: relative; 
+    }
+
+   .osama {
+        height: 112%;
+    }
+    
+    .shady {
+        width: 100%;
+        background-color: #fff;
+        color: #000;
+    }
+
+    .mahmoud {
+        background-color: #fff;
+        color: #000;
+    }
+
+    .ibrahim {
+        background-color: #fff;
+        color: #000;
+    }
+  
+    .eman {
+        width: 100%;
+    }
+
+    footer .social {
+
+        justify-content: flex-start;
+    }
+}
